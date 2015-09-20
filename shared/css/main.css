@@ -1,0 +1,115 @@
+@import url(https://fonts.googleapis.com/css?family=Roboto:400,300,700);
+*{
+	margin:0;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	-ms-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 0;
+	font-family: 'Roboto', sans-serif;
+}
+a{
+	text-decoration: none;
+	color: inherit;
+}
+header{
+	width: 100%;
+	height: 150px;
+	-webkit-box-shadow:  inset 0 -8px 9px rgba(0,0,0,0.1);
+	box-shadow: inset 0 -8px 9px rgba(0,0,0,0.1);
+	padding: 10px 2% 25px 2%;
+}
+h1{
+	width: 150px;
+	display: block;
+	position: relative;
+	float: left;
+}
+h1 span{
+	display: none;
+}
+h1 strong{
+	width: 100%;
+	font-size: 14px;
+	font-weight: 400;
+	color: gray;
+	position: absolute;
+	top: 70%;
+	left: 100%;
+}
+nav{
+	float: right;
+	width: 560px;
+}
+nav ul{
+	width: 100%;
+	list-style-type: none;
+}
+nav li{
+	display: inline-block;
+	font-size: 18px;
+	padding-left: 1%;
+	padding-right: 1%;
+	font-weight: 400;
+	padding-top: 13px;
+	vertical-align: top;
+	
+}
+nav li:hover{
+	padding-top: 6px;
+	color: #5c0a1d;
+	padding-bottom: 7px;
+}
+.redes{
+	width: 100%;
+	text-align: right;
+	padding-top: 35px;
+}
+#plecaRoja{
+	height: 10px;
+	width: 100%;
+	background: #5c0a1d;
+}
+.redes .redIcon{
+	width: 30px;
+    height: 30px;
+    border: red;
+    background-repeat: no-repeat;
+    background-position: bottom center;
+    border-radius: 50%;
+    overflow: hidden;
+    margin: 0 4px;
+    -webkit-transition: background-position 0.2s, background-color 0.4s  ;
+    -o-transition: background-position 0.2s, background-color 0.4s  ;
+    transition: background-position 0.2s, background-color 0.4s  ;
+    background-color: #EFEFEF;
+    display: inline-block;
+    cursor: pointer;
+}
+.redIcon:hover{
+	background-position: top;
+}
+.facebook{
+	background-image: url(../img/facebookIcon.png);
+}
+.facebook:hover{
+	background-color: #4D70A9;
+}
+.twitter{
+	background-image: url(../img/twitterIcon.png);
+}
+.twitter:hover{
+	background-color: #24B9EC;
+}
+.gplus{
+	background-image: url(../img/gplusIcon.png);
+}
+.gplus:hover{
+	background-color: #E34326;
+}
+.youtube{
+	background-image: url(../img/youtubeIcon.png);
+}
+.youtube:hover{
+	background-color: #CB3736;
+}
