@@ -19,6 +19,9 @@ header{
 	box-shadow: inset 0 -8px 9px rgba(0,0,0,0.1);
 	padding: 10px 2% 25px 2%;
 }
+img{
+	margin-bottom: -5px;
+}
 h1{
 	width: 150px;
 	display: block;
@@ -41,11 +44,11 @@ nav{
 	float: right;
 	width: 560px;
 }
-nav ul{
+nav>ul{
 	width: 100%;
 	list-style-type: none;
 }
-nav li{
+.menuItem{
 	display: inline-block;
 	font-size: 18px;
 	padding-left: 1%;
@@ -53,12 +56,21 @@ nav li{
 	font-weight: 400;
 	padding-top: 13px;
 	vertical-align: top;
-	
+	transition: all .2s cubic-bezier(0, 0.58, 0.58, 1);
 }
-nav li:hover{
-	padding-top: 6px;
-	color: #5c0a1d;
+.menuItem:hover{
+	color: #FFFFFF;
+	text-shadow: 0 0 5px rgba(0,0,0,0.9);
 	padding-bottom: 7px;
+	font-weight: 600;
+	padding-right: 0.9%;
+	background-color: #53b1a0;
+	box-shadow: inset 0 0 24px rgba(0,0,0,0.5);
+}
+.sm-col{
+	list-style: none;
+	float: left;
+	width: 33.3333%;
 }
 .redes{
 	width: 100%;
@@ -112,4 +124,56 @@ nav li:hover{
 }
 .youtube:hover{
 	background-color: #CB3736;
+}
+.sm-trigger{
+	position: relative;
+	
+}
+.submenu{
+	 display: none; 
+	position: absolute;
+	top: 100%;
+	left: -220px;
+	padding: 19px 0 22px 16px;
+	width: 579px;
+	background: url('../img/fondoSubmenu.png') no-repeat bottom right;
+	background-size: contain;
+	height: 219px;
+}
+#imagenSubmenu{
+	width: 185px;
+	float: right;
+	margin-right: 5px;
+	border-left: 8px solid #a9ddce;
+}
+.sm-trigger:hover .submenu{
+	display: block;
+}
+.sm-col.list{
+	padding-top: 15px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+.submenu li{
+	font-size: 15px;
+	text-shadow: none;
+	color: black;
+	font-weight: 100;
+	line-height: 1.4;
+}
+.submenu li:hover{
+	color: #45A390;
+	font-style: italic;
+	font-weight: 600;
+}
+.barRight:after{
+ 	content: "";
+ 	position: absolute;
+ 	top: 25px;
+ 	height: 130px;
+ 	width: 4px;
+ 	background: #a9ddce;
+ 	right: 25px;
 }
