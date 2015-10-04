@@ -18,6 +18,17 @@ header{
 	-webkit-box-shadow:  inset 0 -8px 9px rgba(0,0,0,0.1);
 	box-shadow: inset 0 -8px 9px rgba(0,0,0,0.1);
 	padding: 10px 2% 25px 2%;
+	position: relative;
+	z-index: 700;
+	background: #a90329; /* Old browsers */
+	background: -moz-linear-gradient(top, #a90329 0%, #8f0222 44%, #6d0019 100%); /* FF3.6+ */
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(0%,#a90329), color-stop(44%,#8f0222), color-stop(100%,#6d0019)); /* Chrome,Safari4+ */
+	background: -webkit-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Chrome10+,Safari5.1+ */
+	background: -o-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* Opera 11.10+ */
+	background: -ms-linear-gradient(top, #a90329 0%,#8f0222 44%,#6d0019 100%); /* IE10+ */
+	background: linear-gradient(to bottom, #a90329 0%,#8f0222 44%,#6d0019 100%); /* W3C */
+	filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#a90329', endColorstr='#6d0019',GradientType=0 ); /* IE6-9 */
+	copy
 }
 img{
 	margin-bottom: -5px;
@@ -35,14 +46,14 @@ h1 strong{
 	width: 100%;
 	font-size: 14px;
 	font-weight: 400;
-	color: gray;
+	color: white;
 	position: absolute;
 	top: 70%;
 	left: 100%;
 }
 nav{
 	float: right;
-	width: 560px;
+	width: 570px;
 }
 nav>ul{
 	width: 100%;
@@ -57,15 +68,18 @@ nav>ul{
 	padding-top: 13px;
 	vertical-align: top;
 	transition: all .2s cubic-bezier(0, 0.58, 0.58, 1);
+	color: white;
 }
 .menuItem:hover{
 	color: #FFFFFF;
-	text-shadow: 0 0 5px rgba(0,0,0,0.9);
+	text-shadow: 0 0 3px rgba(0,0,0,0.9);
 	padding-bottom: 7px;
 	font-weight: 600;
 	padding-right: 0.9%;
-	background-color: #53b1a0;
-	box-shadow: inset 0 0 24px rgba(0,0,0,0.5);
+	/*background-color: #53b1a0;*/
+	/*box-shadow: inset 0 0 24px rgba(0,0,0,0.5);*/
+	border-top: 2px solid red;
+	padding-top: 11px;
 }
 .sm-col{
 	list-style: none;
@@ -75,12 +89,15 @@ nav>ul{
 .redes{
 	width: 100%;
 	text-align: right;
-	padding-top: 35px;
+	padding-top: 28px;
+	padding-bottom: 10px;
 }
 #plecaRoja{
 	height: 10px;
 	width: 100%;
 	background: #5c0a1d;
+	background: #E52028;
+	background: #51AF9E;
 }
 .redes .redIcon{
 	width: 30px;
@@ -100,6 +117,7 @@ nav>ul{
 }
 .redIcon:hover{
 	background-position: top;
+	/*border-radius: 30%;*/
 }
 .facebook{
 	background-image: url(../img/facebookIcon.png);
@@ -176,4 +194,62 @@ nav>ul{
  	width: 4px;
  	background: #a9ddce;
  	right: 25px;
+}
+main{
+	position: relative;
+	margin: 0 auto;
+	width: 100%;
+	max-width: 1366px;
+	min-height: 500px;
+	z-index: 100;
+}
+.cursosZone{
+	padding: 20px 0;
+}
+.btnClientesSC{
+	width: 49%;
+	float: left;
+	height: 424px;
+	/*border: 1px solid yellow;*/
+	position: relative;
+	background-size: cover;
+	cursor: pointer;
+	background-repeat: no-repeat;
+	background-position: bottom;
+}
+#btn-Cursos{
+	margin-right: 1%;
+	background-image: url("../img/CursosBtn_bg.jpg");
+}
+.btnClientesSC:hover h2{
+	height: 80px;
+	padding: 22px 0 0 10px;
+}
+.btnClientesSC h2{
+	position: absolute;
+    bottom: 0px;
+    height: 60px;
+    font-size: 33px;
+    width: 100%;
+    color: white;
+    padding: 12px 0 0 10px;
+    font-weight: 100;
+    -webkit-transition: all 0.3s cubic-bezier(0.21, -0.01, 0, 1.01);;
+    -o-transition: all 0.3s cubic-bezier(0.21, -0.01, 0, 1.01);;
+    transition: all 0.3s cubic-bezier(0.21, -0.01, 0, 1.01);;
+}
+.iconMas{
+	float: right;
+	color: white;
+	padding-right: 3%;
+	font-weight: 400;
+}
+#btn-Demos{
+	background-image: url("../img/demosBg.jpg");
+}
+#btn-Cursos h2{
+	background: #1782a1;
+}
+#btn-Demos h2{
+	background: #f14093;
 }
