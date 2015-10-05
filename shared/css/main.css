@@ -8,6 +8,15 @@
 	padding: 0;
 	font-family: 'Roboto', sans-serif;
 }
+.d_ib{
+	display: inline-block;
+}
+.iw{
+	width: 100%;
+	overflow: hidden;
+	max-width: 1366px;
+	margin: 0 auto;
+}
 a{
 	text-decoration: none;
 	color: inherit;
@@ -207,7 +216,7 @@ main{
 	padding: 20px 0;
 }
 .btnClientesSC{
-	width: 49%;
+	width: 49.5%;
 	float: left;
 	height: 424px;
 	/*border: 1px solid yellow;*/
@@ -252,4 +261,102 @@ main{
 }
 #btn-Demos h2{
 	background: #f14093;
+}
+
+.bannersZone{
+	width: 100%;
+}
+.bannersZone img{
+	margin: 20px 0 0 0;
+}
+.subscribeZone{
+	height: 123px;
+	background: #d82148;
+	width: 100%;
+	color: white;
+	padding-top: 33px;
+}
+.subscribeZone .copy,
+.subscribeZone .inputZone{
+	width: 50%;
+	float: left;
+	text-align: center;
+	font-size: 56px;
+}
+.cartaHome{
+	width: 80px;
+}
+.subscribeZone .copy p{
+	font-size: 21px;
+	width: 80%;
+	text-align: left;
+	font-weight: 100;
+}
+.newsMail{
+	width: 60%;
+	height: 37px;
+	background: #8e243b;
+	padding: 1%;
+	vertical-align: top;
+	border: none;
+	margin: 14px 0 0 0;
+	font-size: 16px;
+	color: white;
+}
+.newsButton{
+	width: 20%;
+	height: 37px;
+	background: #231f20;
+	color: white;
+	padding: 1%;
+	vertical-align: top;
+	border: none;
+	margin: 14px 0 0 0;
+	font-size: 16px;
+}
+footer{
+	height: 640px;
+	background: url(../img/patronFooter.png)no-repeat top;
+	width: 100%;
+}
+footer .leftCol{
+	width: 65%;
+	float: left;
+	position: relative;
+}
+footer .rightCol{
+	float: left;
+	width: 35%;
+	position: relative;
+}
+.logoFooter{
+	position: relative;
+	z-index: 130;
+	top: 20px;
+	width: 235px;
+}
+footer .sucursalWrapper{
+	width: 100%;
+	position: relative;
+	z-index: 110;
+	font-size: 20px;
+	padding: 30px 10px 35px 10px;
+	background-color: rgba(0,0,0,0.2);
+	border-bottom: 2px solid gray; 
+	color: #434444;
+}
+footer h6{
+	font-size: 22px;
+	padding: 10px 0;
+	border-bottom: 6px solid #a9ddce;
+	margin: 10px 0;
+	width: 60%;
+	max-width: 430px;
+}
+footer .legales.top{
+	margin-top: 20px;
+}
+footer .legales{
+	/*margin-top: 20px;*/
+	text-align: center;
 }
